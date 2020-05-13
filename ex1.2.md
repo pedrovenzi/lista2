@@ -1,0 +1,34 @@
+Table dentistas as D{
+id_dent int [pk]
+nome_dent varchar
+CPF_dent varchar
+RG_dent varchar
+sexo int
+email_dent varchar
+dn_dent date
+espec int [ref: < E.id_espec]
+sala int [ref: > S.id_sala]
+}
+
+Table especializacao as E{
+id_espec int [pk]
+desc_espec varchar
+dentista int [ref: > D.id_dent]
+}
+
+Table consulta{
+  id_cliente int [ref: > P.id_cliente]
+  id_dent int [ref: > D.id_dent]
+  id_sala int [ref: > S.id_sala]
+  data dn
+}
+  
+Table clientes as P{
+  id_cliente int [pk]
+  sexo int
+  dn_cliente date
+}
+  
+Table sala as S{
+  id_sala int [pk]
+}
