@@ -1,0 +1,33 @@
+Table voo as V{
+  saida_prev datetime
+  chegada_prev datetime
+  saida datetime
+  chegada datetime
+  piloto int [ref: > P.id_piloto]
+  aviao int [ref: > A.registro]
+}
+
+Table piloto as P{
+  id_piloto int [pk]
+  nome_piloto varchar
+  cpf_piloto varchar
+  rg_piloto varchar
+  dn_piloto date
+  email_piloto varchar
+  anac_piloto varchar
+}
+
+Table aviao as A{
+  modelo varchar
+  registro varchar [pk]
+  quant_assentos int
+}
+
+Table passageiros as C{
+  nome
+  CPF varcahr
+  RG varchar
+  sexo
+  email_passageiro varchar
+  dn_passegeiro datetime).
+}
