@@ -5,7 +5,7 @@ Table voo as V{
   chegada datetime
   piloto int [ref: > P.id_piloto]
   aviao int [ref: > A.registro]
-  passageiros int [ref: > C.CPF_passag]
+  passageiros varchar [ref: > C.CPF_passag]
 }
 
 Table piloto as P{
