@@ -1,0 +1,4 @@
+SELECT actors.actor_name, characters.character_name
+FROM actors
+LEFT JOIN characters ON actors.actor_id = characters.actor_id
+ORDER BY actors.actor_name;
