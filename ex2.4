@@ -1,0 +1,5 @@
+ALTER TABLE actors
+ADD COLUMN birth_date DATE;
+
+UPDATE actors
+SET birth_date = '1971-03-31' WHERE actor_name = 'Ewan McGregor';
