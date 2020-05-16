@@ -1,5 +1,5 @@
 INSERT INTO Movies
-(movie_name, release_year)
+(movie_name, release_date)
 Values
 ('Django Unchained', '2013-01-18'),
 ('Inception', '2010-08-06'),
